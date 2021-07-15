@@ -1,0 +1,138 @@
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $third-background-color;
+  font-style: normal;
+}
+.address {
+  margin-top: 20px;
+
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer__logo {
+  margin-right: 0px;
+
+  color: $primary-white-color;
+  &--accent-color {
+    color: $accent-color;
+  }
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  color: $primary-white-color;
+}
+.footer-social__list {
+  display: flex;
+}
+.footer-social__list {
+  margin-top: 20px;
+}
+
+.footer-social__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social__icon {
+  display: block;
+  padding: 12px;
+
+  fill: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms $cubic-animation;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.footer-email {
+  margin-left: 93px;
+}
+.footer-email__thumb {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-email__input {
+  display: block;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: border-color 250ms $cubic-animation;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+.footer-email__subscribe-button {
+  padding: 10px 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $accent-color;
+
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}
+.footer-email__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+}
+.footer-email__icon-telegram {
+  fill: $primary-white-color;
+  margin-left: 10px;
+}

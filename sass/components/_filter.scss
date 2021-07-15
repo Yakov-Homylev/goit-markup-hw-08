@@ -1,0 +1,37 @@
+.filter {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  padding: 6px 22px;
+
+  color: $secondary-text-color;
+  background-color: $secondary-bacground-color;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition: background-color 250ms $cubic-animation,
+    color 250ms $cubic-animation, box-shadow 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    border-color: transparent;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

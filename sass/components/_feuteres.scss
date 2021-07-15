@@ -1,0 +1,31 @@
+.feuteres {
+  padding-top: 94px;
+}
+.feuteres__list {
+  display: flex;
+}
+.feuteres__title {
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  line-height: 1.14;
+}
+.feuteres__image-thumb {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: $secondary-bacground-color;
+  border-radius: 4px;
+}
+.feuteres__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.feuteres__text {
+  margin-top: 10px;
+  max-width: 270px;
+}

@@ -1,0 +1,78 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $secondary-bacground-color;
+}
+.team__title {
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.worker-list {
+  display: flex;
+}
+.worker-list__item {
+  margin-right: 30px;
+  border-radius: 4px;
+
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.worker-list__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.worker-list__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: $secondary-text-color;
+
+  margin-bottom: 10px;
+}
+.worker-list__profecion {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list__thumb {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list__link {
+  display: block;
+  background-color: $primary-white-color;
+  padding: 12px;
+  border-radius: 50%;
+
+  fill: $primary-icon-color;
+
+  transition: fill 250ms $cubic-animation,
+    background-color 250ms $cubic-animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+    cursor: pointer;
+  }
+}

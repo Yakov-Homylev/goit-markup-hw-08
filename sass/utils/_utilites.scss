@@ -1,0 +1,93 @@
+body {
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+svg {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  margin: 0px auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.photo {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@mixin transition($atribute) {
+  transition: $atribute 250ms $cubic-animation;
+}
+.button {
+  background-color: $accent-color;
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  cursor: pointer;
+
+  font-family: inherit;
+
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  @include transition(background-color);
+
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}

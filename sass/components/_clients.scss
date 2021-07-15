@@ -1,0 +1,35 @@
+.clients__title {
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+}
+.clients__item {
+  padding: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients__icon {
+  display: block;
+  padding: 16px 32px;
+  fill: $primary-icon-color;
+  border: 1px solid $primary-icon-color;
+  border-radius: 4px;
+
+  transition: fill 250ms $cubic-animation, border 250ms $cubic-animation;
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    cursor: pointer;
+  }
+}
