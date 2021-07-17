@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -20,38 +20,89 @@
     <!-- Header -->
     <header class="page-header">
         <div class="page-header__container container">
-            <a href="./index.html" class="logo"><span class="logo--accent-color">Web</span>Studio</a>
-            <nav>
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link link site-nav__link--curent">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
+            <div class="mobile">
+                <a href="./index.html" class="logo"><span class="logo--accent-color">Web</span>Studio</a>
+                <button type="button" class="mobile__button--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile__burger" width="24" height="16">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile__menu js-menu-container" id="mobile-menu">
+                    <button type="button" class="mobile__button--close js-close-menu"><svg width="19" height="19">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg></button>
+                    <nav>
+                        <ul class="mobile-nav list">
+                            <li class="mobile-nav__item"><a href="./index.html"
+                                    class="mobile-nav__link link mobile-nav__link--curent">Студия</a>
+                            </li>
+                            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a></li>
+                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="mobile-contacts list">
+                        <li class="mobile-contacts__item">
+                            <a href="tel:+380961111111" class="mobile-contacts__link--tel link">
+                                +38 099 111 11 11</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="mobile-contacts__link link">
+                                info@example.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list mobile-social">
+                        <li class="mobile-social__item">
+                            <a href="" class="mobile-social__link link">Instagram</a>
+                        </li>
+                        <li class="mobile-social__item">
+                            <a href="" class="mobile-social__link link">Twitter</a>
+                        </li>
+                        <li class="mobile-social__item">
+                            <a href="" class="mobile-social__link link">Facebook</a>
+                        </li>
+                        <li class="mobile-social__item">
+                            <a href="" class="mobile-social__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-header__desktop">
+                <a href="./index.html" class="logo"><span class="logo--accent-color">Web</span>Studio</a>
+                <nav class="site-nav">
+                    <ul class="site-nav__list list">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link link site-nav__link--curent">Студия</a>
+                        </li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link link">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@example.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link link">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 099 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link link">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@example.com</a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link link">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 099 111 11 11</a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <!-- Main Section -->
     <main>
         <!-- Hero -->
         <section class="hero">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open type="button" class="button">Заказать услуги</button>
+            <div class="container">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button data-modal-open type="button" class="button">Заказать услуги</button>
+            </div>
         </section>
         <!-- Features -->
         <section class="feuteres">
@@ -106,19 +157,19 @@
             <div class="container">
                 <h2 class="works__title">Чем мы занимаемся</h2>
                 <ul class="list works__list">
-                    <li class="works__item"><img class="photo" src="./images/box1.jpg" width="370"
+                    <li class="works__item"><img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" class="photo" src="./images/box1.jpg" width="370"
                             alt="Набор кода на клавиатуре">
                         <div class="works__overlay">
                             <p class="works__text">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"><img class="photo" src="./images/box2.jpg" width="370"
+                    <li class="works__item"><img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" class="photo" src="./images/box2.jpg" width="370"
                             alt="Смартфон в руке, на фоне ноутбука, с открытым сайтом смартфонов">
                         <div class="works__overlay">
                             <p class="works__text">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"><img class="photo" src="./images/box3.jpg" width="370"
+                    <li class="works__item"><img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" class="photo" src="./images/box3.jpg" width="370"
                             alt="Дизайнер с палитрой цветов">
                         <div class="works__overlay">
                             <p class="works__text">Дизайнерские решения</p>
@@ -133,7 +184,7 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="list worker-list">
                     <li class="worker-list__item">
-                        <img class="photo" src="./images/igor.jpg" width="270"
+                        <img srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x" class="photo" src="./images/igor.jpg" width="270"
                             alt="Парень с бородой, в очках и бордовой рубашке">
                         <div class="worker-list__info">
                             <h3 class="worker-list__name">Игорь Демьяненко</h3>
@@ -167,7 +218,7 @@
                         </div>
                     </li>
                     <li class="worker-list__item">
-                        <img class="photo" src="./images/olga.jpg" width="270"
+                        <img srcset="./images/olga.jpg  1x, ./images/olga@2x.jpg 2x" class="photo" src="./images/olga.jpg" width="270"
                             alt="Девушка, блондинка, в черном пиджаке">
                         <div class="worker-list__info">
                             <h3 class="worker-list__name">Ольга Репина</h3>
@@ -201,7 +252,7 @@
                         </div>
                     </li>
                     <li class="worker-list__item">
-                        <img class="photo" src="./images/nik.jpg" width="270" alt="Парень с щетиной, в рубашке">
+                        <img srcset="./images/nik.jpg  1x, ./images/nik@2x.jpg 2x" class="photo" src="./images/nik.jpg" width="270" alt="Парень с щетиной, в рубашке">
                         <div class="worker-list__info">
                             <h3 class="worker-list__name">Николай Тарасов</h3>
                             <p class="worker-list__profecion">Marketing</p>
@@ -234,7 +285,7 @@
                         </div>
                     </li>
                     <li class="worker-list__item">
-                        <img class="photo" src="./images/max.jpg" width="270" alt="Парень с бородой в черной футболке">
+                        <img srcset="./images/mix.jpg  1x, ./images/mix@2x.jpg 2x" class="photo" src="./images/mix.jpg" width="270" alt="Парень с бородой в черной футболке">
                         <div class="worker-list__info">
                             <h3 class="worker-list__name">Михаил Ермаков</h3>
                             <p class="worker-list__profecion">UI Designer</p>
@@ -426,6 +477,10 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
