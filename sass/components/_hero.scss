@@ -9,6 +9,7 @@
   background-position: center;
   background-size: 480px 420px;
   background-color: #c4c4c4;
+  max-width: 480px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,8 +27,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-480.jpg);
+      url(../images/background-768.jpg);
     background-size: cover;
+    max-width: 768px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -47,8 +49,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-768.jpg);
+      url(../images/background-768@2x.jpg);
     background-size: cover;
+    max-width: 1200px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -68,8 +71,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-1200.jpg);
+      url(../images/background-1200@2x.jpg);
     background-size: cover;
+    max-width: 1600px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -79,7 +83,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/background-1200@2x.jpg);
+        url(../images/background-1200@3x.jpg);
     }
   }
 
@@ -87,7 +91,6 @@
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  max-width: 1600px;
 }
 
 .hero__title {
