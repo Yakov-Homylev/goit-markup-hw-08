@@ -13,10 +13,13 @@
 }
 
 .projects__card {
+  @media screen and (max-width: 767px) {
+    min-width: 450px;
+    width: 100%;
+  }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
-      min-width: 450px;
     }
   }
 
@@ -77,10 +80,15 @@
 .projects__thumb {
   position: relative;
   overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 .projects__photo {
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 450px;
   }
 }
 .projects__description {

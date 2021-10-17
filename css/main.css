@@ -1195,6 +1195,7 @@ ul {
 }
 
 .footer {
+  min-width: 480px;
   background-color: #2f303a;
   font-style: normal;
 }
@@ -1530,9 +1531,15 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .projects__card {
+    min-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .projects__card:not(:last-child) {
     margin-bottom: 30px;
-    min-width: 450px;
   }
 }
 
@@ -1612,9 +1619,14 @@ ul {
   overflow: hidden;
 }
 
+.projects__thumb img {
+  width: 100%;
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .projects__photo {
-    width: 450px;
+    min-width: 450px;
   }
 }
 
